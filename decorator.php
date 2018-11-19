@@ -1,4 +1,4 @@
-<?php //decorator pattern, very useful for not growing the class tree too much
+<?php //decorator pattern, very useful for not growing the classes tree too much
 
 //	Interfaces
 interface MainDish
