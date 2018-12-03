@@ -4,8 +4,5 @@
 			"App\\": "src",
 			"Tests\\": "tests"
 		}
-	},
-	"require": {
-		"phpunit/phpunit": "^7.4"
 	}
 }

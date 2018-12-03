@@ -15,7 +15,7 @@ class FactoryMethodTest extends TestCase
 		$loggerFactory = new StdoutLoggerFactory();
 		$logger = $loggerFactory->createLogger();
 
-		$this->assertInstanceOf(StdoutLogger::class, $Logger);
+		$this->assertInstanceOf(StdoutLogger::class, $logger);
 	}
 
 	public function testCanCreateFileLogging()

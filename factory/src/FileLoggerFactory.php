@@ -1,5 +1,5 @@
 <?php namespace App;
-
+ 
 class FileLoggerFactory implements LoggerFactory
 {
 	private $filePath;
