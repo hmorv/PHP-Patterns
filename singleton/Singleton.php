@@ -2,11 +2,12 @@
 
 class Singleton
 {
-	private static $instance;
+	private static $instance = null;
 
 	private function __construct()
 	{
-		var_dump(__CLASS__ .' instance running');
+		self::$count++;
+		var_dump(__CLASS__ .' instance running.');
 	}
 
 	public static function getInstance()
@@ -16,5 +17,8 @@ class Singleton
 		}
 
 		return self::$instance;
+
+		//	equivalent:
+		//	return self::$instance = (is_null(self::$instance)) ? new Singleton : self::$instance;
 	}
 }
