@@ -1,8 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace SimpleFactory;
-//use SimpleFactory\DrivableInterface;
-use SimpleFactory\Vehicles\{Car, Aircraft, Bicycle};
+namespace SimpleFactory\Factories;
+
+use SimpleFactory\Vehicles\{Car, Aircraft, Bicycle, Ship};
+
 class SimpleFactory
 {
 	public function createBicycle(): Bicycle
@@ -16,5 +17,9 @@ class SimpleFactory
 	public function createAircraft(): Aircraft
 	{
 		return new Aircraft();
+	}
+	public function createShip(): Ship
+	{
+		return new Ship();
 	}
 }

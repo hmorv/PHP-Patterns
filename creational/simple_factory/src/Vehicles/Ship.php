@@ -1,13 +1,13 @@
-<?php declare(strict_types=1);
+<?php
 
 namespace SimpleFactory\Vehicles;
 
 use SimpleFactory\Interfaces\DrivableInterface;
 
-class Bicycle implements DrivableInterface
+class Ship implements DrivableInterface
 {
 	public function driveTo(string $destination): string
 	{
-		return "Driving to $destination\n";
+		return "Sailing to $destination\n";
 	}
 }

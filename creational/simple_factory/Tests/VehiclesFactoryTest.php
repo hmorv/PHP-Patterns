@@ -2,13 +2,11 @@
 
 namespace SimpleFactory\Tests;
 
-use SimpleFactory\Vehicles\Car;
-use SimpleFactory\Vehicles\Bicycle;
-use SimpleFactory\Vehicles\Aircraft;
+use SimpleFactory\Vehicles\{Car, Ship, Bicycle, Aircraft};
 use PHPUnit\Framework\TestCase;
-use SimpleFactory\SimpleFactory;
+use SimpleFactory\Factories\SimpleFactory;
 
-class SimpleFactoryTest extends TestCase
+class VehiclesFactoryTest extends TestCase
 {
 	public function testCanCreateBicycle()
 	{
@@ -24,5 +22,10 @@ class SimpleFactoryTest extends TestCase
 	{
 		$aircraft = (new SimpleFactory())->createAircraft();
 		$this->assertInstanceOf(Aircraft::class, $aircraft);
+	}
+	public function testCanCreateShip()
+	{
+		$ship = (new SimpleFactory())->createShip();
+		$this->assertInstanceOf(Ship::class, $ship);
 	}
 }

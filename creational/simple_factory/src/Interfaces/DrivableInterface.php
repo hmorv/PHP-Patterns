@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleFactory;
+namespace SimpleFactory\Interfaces;
 
 interface DrivableInterface
 {
